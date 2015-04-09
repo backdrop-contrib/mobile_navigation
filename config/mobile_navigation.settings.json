@@ -1,0 +1,16 @@
+{
+    "_config_name": "mobile_navigation.settings",
+    "mobile_navigation_breakpoint": "all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)",
+    "mobile_navigation_menuselector": "ul.menu",
+    "mobile_navigation_plugin": "basic",
+    "mobile_navigation_showEffect": "expand_down",
+    "mobile_navigation_showitems": "all",
+    "mobile_navigation_tabhandler": "TRUE",
+
+    "mobile_navigation_width": "65",
+    "mobile_navigation_special_classes": "FALSE",
+    "mobile_navigation_mainPageSelector": ".l-container",
+    "mobile_navigation_useMask": "TRUE",
+    "mobile_navigation_menu_label": "Menu",
+    "mobile_navigation_expand_active_trail": "FALSE"
+}

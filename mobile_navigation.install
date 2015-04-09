@@ -1,0 +1,40 @@
+<?php
+/**
+ * @file
+ * Mobile Navigation install file.
+ */
+
+function mobile_navigation_update_1000() {
+  $config = config('mobile_navigation.settings');
+
+  // migrate variables
+  $config->set('mobile_navigation_breakpoint', update_variable_get('mobile_navigation_breakpoint'));
+  $config->set('mobile_navigation_menuselector', update_variable_get('mobile_navigation_menuselector'));
+  $config->set('mobile_navigation_plugin', update_variable_get('mobile_navigation_plugin'));
+  $config->set('mobile_navigation_showEffect', update_variable_get('mobile_navigation_showEffect'));
+  $config->set('mobile_navigation_showitems', update_variable_get('mobile_navigation_showitems'));
+  $config->set('mobile_navigation_tabhandler', update_variable_get('mobile_navigation_tabhandler'));
+
+  $config->set('mobile_navigation_width', update_variable_get('mobile_navigation_width'));
+  $config->set('mobile_navigation_special_classes', update_variable_get('mobile_navigation_special_classes'));
+  $config->set('mobile_navigation_mainPageSelector', update_variable_get('mobile_navigation_mainPageSelector'));
+  $config->set('mobile_navigation_useMask', update_variable_get('mobile_navigation_useMask'));
+  $config->set('mobile_navigation_menu_label', update_variable_get('mobile_navigation_menu_label'));
+  $config->set('mobile_navigation_expand_active_trail', update_variable_get('mobile_navigation_expand_active_trail'));
+  $config->save();
+
+  // Delete variables.
+  update_variable_del('mobile_navigation_breakpoint');
+  update_variable_del('mobile_navigation_menuselector');
+  update_variable_del('mobile_navigation_plugin');
+  update_variable_del('mobile_navigation_showEffect');
+  update_variable_del('mobile_navigation_showitems');
+  update_variable_del('mobile_navigation_tabhandler');
+
+  update_variable_del('mobile_navigation_width');
+  update_variable_del('mobile_navigation_special_classes');
+  update_variable_del('mobile_navigation_mainPageSelector');
+  update_variable_del('mobile_navigation_useMask');
+  update_variable_del('mobile_navigation_menu_label');
+  update_variable_del('mobile_navigation_expand_active_trail');
+}
