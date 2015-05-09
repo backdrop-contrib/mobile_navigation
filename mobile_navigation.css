@@ -2,6 +2,7 @@
 #mobile-menu-inner {
   float: left;
   z-index: 9999;
+  width: 90%;
 }
 
 #mobile-menu,
@@ -22,6 +23,7 @@
   list-style: none outside none;
   margin: 0;
   overflow: hidden;
+  width: 100%;
 }
 
 #mobile-menu > li:first-child {
@@ -57,6 +59,7 @@
   float: left;
   padding: 4px 5%;
   width: 90%;
+  color: #000;
 }
 
 #mobile-menu > li.item-with-ul > * > a,
@@ -65,6 +68,7 @@
   float: left;
   padding: 5px 7% 5px 5%;
   width: 68%;
+  color: #000;
 }
 
 #mobile-menu li ul li.item-with-ul > * > a,
@@ -193,7 +197,7 @@
   background-image: none;
 }
 
-/** 
+/**
  * Menu clip
  */
 #slide-menu-clip {
@@ -201,6 +205,7 @@
 }
 
 #collapsed-menu-button {
+  color: #000;
   background-color: #ffffff;
   border: 1px solid #cccccc;
   border-radius: 5px 5px 5px 5px;

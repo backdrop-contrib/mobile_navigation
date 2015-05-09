@@ -3,4 +3,5 @@ description = Displays for menus on mobile versions
 package = User interface
 version = BACKDROP_VERSION
 backdrop = 1.x
+type = module
 configure = admin/config/user-interface/mobile_navigation
