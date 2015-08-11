@@ -90,7 +90,7 @@ window.matchMedia || (window.matchMedia = function() {
     specialClasses : true,
 
     useMask : true,
-    
+
     menuLabel : "Menu"
   };
 
@@ -101,6 +101,9 @@ window.matchMedia || (window.matchMedia = function() {
       right : "50px",
       top : "50px"
     });
+
+
+
   });
 
   // Main Class
@@ -261,7 +264,7 @@ window.matchMedia || (window.matchMedia = function() {
             e.stopPropagation();
             e.preventDefault();
           });
-  */        
+  */
           if ('ontouchstart' in document.documentElement) {
             $('#collapsed-menu-button').on('touchstart', function(e) {
               _this.menuToggle(this);

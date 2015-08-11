@@ -1,7 +1,7 @@
 {
     "_config_name": "mobile_navigation.settings",
     "mobile_navigation_breakpoint": "all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)",
-    "mobile_navigation_menuselector": "ul.menu",
+    "mobile_navigation_menuselector": ".block-system-main-menu ul.menu",
     "mobile_navigation_plugin": "basic",
     "mobile_navigation_showEffect": "expand_down",
     "mobile_navigation_showitems": "all",
