@@ -1,6 +1,19 @@
 MOBILE NAVIGATION
 ===================
 
+Mobile Navigation helps you easily implement a nice solution for displaying
+menus on the mobile version of a responsive website.
+
+I have found many ways of doing this out there, but they are not precisely
+the best solution regarding performance or they need the work of implementing
+a third party JQuery plugin or having to learn javascript and programming the
+whole thing.
+
+With this module you may only need to install the module as usual and then
+out of the box have all that is needed to implement a mobile version for menus,
+featuring some simple configurations that will let you personalize the behavior
+of this mobile versions.
+
 CONTENTS OF THIS FILE
 ---------------------
 
@@ -16,16 +29,6 @@ CONTENTS OF THIS FILE
  - Credits
  - Maintainers
 
-INTRODUCTION
-------------
-
-Mobile Navigation helps you easily implement a nice solution for displaying site menus on the mobile version of a responsive website.
-
-I have found many ways of doing this out there, but they are not precisely the best solution regarding performance or they need the work of implementing a third party JQuery plugin or having to learn javascript and programming the whole thing.
-
-With this module you may only need to install the module as usual and then out of the box have all that is needed to implement a mobile version for menus, featuring some simple configurations that will let you personalize the behavior
-of this mobile versions.
-
 TESTED
 -----
 
@@ -34,7 +37,9 @@ Tested working in Backdrop 1.1
 KNOWN ISSUES
 ---------------------
 
-Not all themes work with every style of the mobile navigation button out of the box currently.  You may have to write some CSS to make it work with your theme.  Since there are so few themes for Backdrop CMS at the present, we probably will have the time to update this module for workarounds for all the released themes currently in 8/2015, so stay tuned.
+This module may conflict with a theme's mobile menu or the Responsive Menus module.
+
+Not all themes work with every style of the mobile navigation button out of the box currently. You may have to write some CSS to make it work with your theme. Since there are so few themes for Backdrop CMS at the present, we probably will have the time to update this module for workarounds for all the released themes currently in 8/2015, so stay tuned.
 
 SPECIAL THANKS
 --------------
@@ -53,8 +58,7 @@ INSTALLATION
 Install this module using the official Backdrop CMS instructions at https://backdropcms.org/guide/modules
 
 1. Download and extract the Mobile Navigation Module into the modules directory.
-2. Go to /admin/config/user-interface/mobile_navigation. Configure and save.
-3. View your site on a small screen and look for the main/primary menu button.
+2. Go to /admin/config/user-interface/mobile_navigation. Configure.
 
 COMING FROM DRUPAL?
 -------------------
@@ -75,9 +79,7 @@ the menu and < li > for menu items.
 Mobile Navigation module uses some Javascript to clone the current menu of your
 website and creates a version of it with a diferent behavior adapted to mobile.
 
-At the Mobile Navigation configuration page you can administer Mobile
-Navigation settings.
-You must set two parameters for the transformation to take place:
+At the Mobile Navigation configuration page you can administer Mobile Navigation settings. You must set two parameters for the transformation to take place:
 
     A Media Query for the breakpoint.
 
@@ -97,8 +99,7 @@ You must set two parameters for the transformation to take place:
     module you like or the Backdrop main menu), you'll have to check for the
     corret selector, that might be #supefish-1, #megamenu-menu,
     #navigation .menu, etc.
-
-Additionally there is the Mobile navigation behaviors configuration:
+    Additionally there is the Mobile navigation behaviors configuration:
 
     Select a plugin for the menu. Currently suported plugins: Basic: Simply
     slide showing the menu, without any special behavior on its contents.
@@ -111,11 +112,10 @@ Additionally there is the Mobile navigation behaviors configuration:
     trail to be oppened, so when you open a submenu, any other opened submenu
     will automaticaly close.
 
-    There is an option on the way the menu shows up, the location and the
-    direction.
+There is an option on the way the menu shows up, the location and the
+direction.
 
-    Finally there is the option to have a tab handler attached to the menu.
-
+Finally there is the option to have a tab handler attached to the menu.
 Enjoy!
 
 LICENSE

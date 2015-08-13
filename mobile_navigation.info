@@ -1,7 +1,7 @@
 name = Mobile Navigation
 description = Displays for menus on mobile versions
 package = User interface
-version = 1.x-1.1.1
+version = BACKDROP_VERSION
 backdrop = 1.x
 type = module
 configure = admin/config/user-interface/mobile_navigation
