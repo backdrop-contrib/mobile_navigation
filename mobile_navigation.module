@@ -100,3 +100,14 @@ function mobile_navigation_menu() {
 
   return $items;
 }
+
+/**
+ * Implements hook_config_info().
+ */
+ function mobile_navigation_config_info() {
+   $prefixes['mobile_navigation.settings'] = array(
+     'label' => t('Mobile Navigation settings'),
+     'group' => t('Mobile Navigation'),
+   );
+   return $prefixes;
+ }
