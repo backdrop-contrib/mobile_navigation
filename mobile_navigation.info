@@ -4,4 +4,4 @@ package = User interface
 version = BACKDROP_VERSION
 backdrop = 1.x
 type = module
-configure = admin/config/user-interface/mobile_navigation
+configure = admin/config/user-interface/mobile-navigation
